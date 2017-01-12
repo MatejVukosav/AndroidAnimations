@@ -18,6 +18,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate( savedInstanceState );
         binding = DataBindingUtil.setContentView( this, R.layout.activity_main );
 
+        binding.btnAnim.setOnClickListener( new View.OnClickListener() {
+            @Override
+            public void onClick( View v ) {
+                Intent intent = new Intent( MainActivity.this, AnimationsActivity.class );
+                startActivity( intent );
+            }
+        } );
+
         binding.sharedLeTrAc.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick( View v ) {

@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
 
     <LinearLayout
         android:id="@+id/activity_shared_element_transition"
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:paddingBottom="@dimen/activity_vertical_margin"
-        android:paddingLeft="@dimen/activity_horizontal_margin"
-        android:paddingRight="@dimen/activity_horizontal_margin"
-        android:paddingTop="@dimen/activity_vertical_margin"
         tools:context="vuki.com.animations.SharedElementTransitionActivity">
 
 
@@ -19,15 +16,26 @@
             android:id="@+id/tekstTarget"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:transitionName="tekst1"/>
+            android:transitionName="tekst1"
+            tools:txt="Ovdje ce pisati neki tekst"/>
 
         <ImageView
             android:id="@+id/slika1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:scaleType="centerCrop"
             android:minHeight="100dp"
+            android:scaleType="centerCrop"
             android:transitionName="slika1"
+            tools:src="@drawable/gorila"
+            />
+
+        <ImageView
+            android:id="@+id/slikaReveal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="100dp"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/tigar"
             />
 
 

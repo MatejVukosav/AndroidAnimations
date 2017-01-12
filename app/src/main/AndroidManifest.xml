@@ -17,6 +17,8 @@
         </activity>
         <activity android:name=".SharedElementTransitionActivity">
         </activity>
+        <activity android:name=".AnimationsActivity">
+        </activity>
     </application>
 
 </manifest>

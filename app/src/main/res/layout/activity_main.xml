@@ -1,73 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
-
-    <LinearLayout
-        android:id="@+id/activity_main"
-        xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:paddingBottom="@dimen/activity_vertical_margin"
-        android:paddingLeft="@dimen/activity_horizontal_margin"
-        android:paddingRight="@dimen/activity_horizontal_margin"
-        android:paddingTop="@dimen/activity_vertical_margin"
-        tools:context="vuki.com.animations.MainActivity">
+        android:fitsSystemWindows="true">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hello World!"/>
 
-        <Button
-            android:id="@+id/shared_le_tr_ac"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Shared Element Transition Activity"
-            />
-
-        <ImageView
+        <LinearLayout
+            android:id="@+id/activity_main"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:scaleType="centerCrop"
-            android:src="@drawable/tigar"
-            />
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            tools:context="vuki.com.animations.MainActivity">
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="20dp"/>
+            <Button
+                android:id="@+id/btn_anim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Animations screen"
+                />
 
-        <ImageView
-            android:id="@+id/slika1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:scaleType="centerCrop"
-            android:src="@drawable/gorila"
-            android:transitionName="slika1"
-            />
+            <Button
+                android:id="@+id/shared_le_tr_ac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shared Element Transition Activity"
+                />
 
-        <TextView
-            android:id="@+id/tekstSource"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Ovo je gorila"
-            android:transitionName="tekst1"
-            />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/tigar"
+                />
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
 
-        <Button
-            android:id="@+id/btn_reveal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Btn za reveal"
+            <ImageView
+                android:id="@+id/slika1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/gorila"
+                android:transitionName="slika1"
+                />
 
-            />
+            <TextView
+                android:id="@+id/tekstSource"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ovo je gorila"
+                android:transitionName="tekst1"
+                />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                />
+
+            <Button
+                android:id="@+id/btn_reveal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Btn za reveal"
+
+                />
 
 
-    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 </layout>
